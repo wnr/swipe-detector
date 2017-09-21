@@ -48,8 +48,8 @@ export default function SwipeDetector({
         }
     }
 
-    element.addEventListener('touchend', handleTouchEnd);
     element.addEventListener('touchstart', handleTouchStart);
+    element.addEventListener('touchend', handleTouchEnd);
 
     return {
         onLeftSwipe: function (callback) {
