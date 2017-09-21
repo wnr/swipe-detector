@@ -1,6 +1,6 @@
 {
   "name": "swipe-detector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "avascript Swipe gesture detector.",
   "main": "src/swipe-detector.js",
   "scripts": {

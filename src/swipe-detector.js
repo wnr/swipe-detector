@@ -1,9 +1,10 @@
-module.exports = function SwipeDetector({
-    element,
-    minVelocity = 0.3,
-    maxDistanceY = 20,
-    minDistanceX = 10
-}) {
+module.exports = function SwipeDetector(options) {
+    options = options || {};
+    var element = options.element;
+    var minVelocity = options.minVelocity !== undefined ? options.minVelocity : 0.3;
+    var maxDistanceY = options.maxDistanceY !== undefined ? options.maxDistanceY : 20;
+    var minDistanceX = options.minDistanceX !== undefined ? options.minDistanceX : 10;
+
     var startX;
     var startY;
     var startTime;
@@ -29,15 +30,15 @@ module.exports = function SwipeDetector({
     }
 
     function handleTouchEnd(e) {
-        const endX = e.changedTouches[0].pageX;
-        const endY = e.changedTouches[0].pageY;
-        const endTime = new Date().getTime();
+        var endX = e.changedTouches[0].pageX;
+        var endY = e.changedTouches[0].pageY;
+        var endTime = new Date().getTime();
 
-        const elapsedDistanceX = endX - startX;
-        const elapsedDistanceY = endY - startY;
-        const elapsedTime = endTime - startTime;
+        var elapsedDistanceX = endX - startX;
+        var elapsedDistanceY = endY - startY;
+        var elapsedTime = endTime - startTime;
 
-        const velocityX = Math.abs(elapsedDistanceX) / elapsedTime; // px/ms
+        var velocityX = Math.abs(elapsedDistanceX) / elapsedTime; // px/ms
 
         if (Math.abs(elapsedDistanceX) >= minDistanceX && velocityX >= minVelocity && Math.abs(elapsedDistanceY) <= maxDistanceY) {
             if (elapsedDistanceX > 0) {
