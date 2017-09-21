@@ -1,0 +1,24 @@
+{
+  "name": "swipe-detector",
+  "version": "0.1.0",
+  "description": "avascript Swipe gesture detector.",
+  "main": "src/swipe-detector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wnr/swipe-detector.git"
+  },
+  "keywords": [
+    "swipe",
+    "event",
+    "javascript"
+  ],
+  "author": "Daniel Kihlgren & Lucas Wiener",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wnr/swipe-detector/issues"
+  },
+  "homepage": "https://github.com/wnr/swipe-detector#readme"
+}
