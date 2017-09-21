@@ -1,4 +1,4 @@
-export default function SwipeDetector({
+module.exports = function SwipeDetector({
     element,
     minVelocity = 0.3,
     maxDistanceY = 20,
@@ -65,4 +65,4 @@ export default function SwipeDetector({
             swipeRightListeners = [];
         }
     };
-}
+};
