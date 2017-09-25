@@ -1,7 +1,7 @@
 {
   "name": "swipe-detector",
   "version": "0.1.2",
-  "description": "avascript Swipe gesture detector.",
+  "description": "javascript Swipe gesture detector.",
   "main": "src/swipe-detector.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
