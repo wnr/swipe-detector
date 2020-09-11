@@ -49,7 +49,7 @@ module.exports = function SwipeDetector(options) {
         }
     }
 
-    element.addEventListener('touchstart', handleTouchStart);
+    element.addEventListener('touchstart', handleTouchStart, {passive: true});
     element.addEventListener('touchend', handleTouchEnd);
 
     return {
